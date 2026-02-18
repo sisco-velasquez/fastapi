@@ -54,7 +54,7 @@ class TokenData(SQLModel):
 class Vote(SQLModel):
     post_id: int
     dir: int 
-
+#combines the post object and vote count
 class PostOut(SQLModel):
     Post: PostResponse
     votes: int  

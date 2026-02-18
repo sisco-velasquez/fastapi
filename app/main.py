@@ -5,7 +5,7 @@ from .routers import user, post, auth, vote
 
 app = FastAPI()
 
-# Connect the routers to the main app
+
 app.include_router(user.router)
 app.include_router(post.router)
 app.include_router(auth.router)
