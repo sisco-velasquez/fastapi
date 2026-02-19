@@ -1,5 +1,5 @@
 from sqlmodel import SQLModel, create_engine, Session
-from .config import settings  # <--- Import settings
+from .config import settings  
 
 # Construct the URL dynamically
 SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
